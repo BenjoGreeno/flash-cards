@@ -47,15 +47,29 @@ app.get('/api/cards/:subject/:topic', (req, res) => {
     const files = fs.readdirSync(subjectDir).filter(file => file.endsWith('.json'));
     let allCards = [];
     let cardId = 1;
+    let combinedMetadata = { sources: [], lastUpdated: null };
     
     files.forEach(file => {
       const filePath = path.join(subjectDir, file);
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       const cardsWithNewIds = data.cards.map(card => ({ ...card, id: cardId++ }));
       allCards = allCards.concat(cardsWithNewIds);
+      
+      // Combine metadata
+      if (data.metadata) {
+        if (data.metadata.sources) {
+          combinedMetadata.sources = combinedMetadata.sources.concat(data.metadata.sources);
+        }
+        if (!combinedMetadata.lastUpdated || data.metadata.lastUpdated > combinedMetadata.lastUpdated) {
+          combinedMetadata.lastUpdated = data.metadata.lastUpdated;
+        }
+      }
     });
     
-    return res.json(allCards);
+    // Remove duplicate sources
+    combinedMetadata.sources = [...new Set(combinedMetadata.sources)];
+    
+    return res.json({ cards: allCards, metadata: combinedMetadata });
   }
   
   // Single topic
@@ -65,7 +79,7 @@ app.get('/api/cards/:subject/:topic', (req, res) => {
   }
   
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  res.json(data.cards);
+  res.json({ cards: data.cards, metadata: data.metadata });
 });
 
 // Legacy endpoint for backwards compatibility

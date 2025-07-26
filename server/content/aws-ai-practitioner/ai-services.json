@@ -1,6 +1,16 @@
 {
   "subject": "aws-ai-practitioner",
   "topic": "ai-services",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "AWS AI Services Documentation",
+      "AWS Rekognition, Comprehend, Polly Documentation",
+      "AWS AI Practitioner Exam Guide"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
   "cards": [
     {
       "id": 1,

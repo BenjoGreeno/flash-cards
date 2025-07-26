@@ -1,6 +1,16 @@
 {
   "subject": "aws-ai-practitioner",
   "topic": "bedrock-basics",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "AWS Bedrock Documentation",
+      "AWS AI Practitioner Exam Guide",
+      "AWS Bedrock User Guide"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
   "cards": [
     {
       "id": 1,

@@ -1,10 +1,12 @@
 import React, { useState, useCallback } from 'react';
 import FlashCard from './FlashCard';
 import SubjectSelector from './SubjectSelector';
+import TopicInfo from './TopicInfo';
 import './App.css';
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [metadata, setMetadata] = useState(null);
   const [currentSubject, setCurrentSubject] = useState('');
   const [currentTopic, setCurrentTopic] = useState('');
 
@@ -14,7 +16,10 @@ function App() {
     
     fetch(`http://localhost:5000/api/cards/${subject}/${topic}`)
       .then(res => res.json())
-      .then(data => setCards(data))
+      .then(data => {
+        setCards(data.cards || data); // Handle both new and old format
+        setMetadata(data.metadata || null);
+      })
       .catch(err => console.error('Error fetching cards:', err));
   }, []);
 
@@ -28,6 +33,7 @@ function App() {
             {currentSubject} → {currentTopic === 'all' ? 'All Topics' : currentTopic}
           </p>
         )}
+        <TopicInfo metadata={metadata} />
         <div className="cards-container">
           {cards.map(card => (
             <FlashCard key={card.id} card={card} />

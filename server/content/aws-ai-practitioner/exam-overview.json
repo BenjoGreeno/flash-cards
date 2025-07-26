@@ -1,37 +1,46 @@
 {
   "subject": "aws-ai-practitioner",
   "topic": "exam-overview",
-  "source": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "AWS AI Practitioner Certification Exam Guide",
+      "AWS Training and Certification",
+      "AWS AI/ML Learning Path"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
   "cards": [
     {
       "id": 1,
-      "question": "What is: Select your cookie preferences\n\nWe use essential c...?",
-      "answer": "Select your cookie preferences\n\nWe use essential cookies and similar tools that are necessary to provide our site and services"
+      "question": "What is the AWS AI Practitioner certification code?",
+      "answer": "AI1-C01"
     },
     {
       "id": 2,
-      "question": "What is: We use performance cookies to collect anonymous st...?",
-      "answer": "We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements"
+      "question": "How long is the AWS AI Practitioner exam?",
+      "answer": "90 minutes"
     },
     {
       "id": 3,
-      "question": "What is: Essential cookies cannot be deactivated, but you c...?",
-      "answer": "Essential cookies cannot be deactivated, but you can choose “Customize” or “Decline” to decline performance cookies"
+      "question": "What are the main domains covered in the AWS AI Practitioner exam?",
+      "answer": "AI/ML fundamentals, AWS AI services, responsible AI practices, and AI use cases"
     },
     {
       "id": 4,
-      "question": "What is: If you agree, AWS and approved third parties will ...?",
-      "answer": "If you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising"
+      "question": "What is the passing score for the AWS AI Practitioner exam?",
+      "answer": "700 out of 1000 (scaled scoring)"
     },
     {
       "id": 5,
-      "question": "What is: To accept or decline all non-essential cookies, ch...?",
-      "answer": "To accept or decline all non-essential cookies, choose “Accept” or “Decline"
+      "question": "What type of questions are on the AWS AI Practitioner exam?",
+      "answer": "Multiple choice and multiple response questions"
     },
     {
       "id": 6,
-      "question": "What is: ” To make more detailed choices, choose “Customize...?",
-      "answer": "” To make more detailed choices, choose “Customize"
+      "question": "What is the cost of the AWS AI Practitioner exam?",
+      "answer": "$100 USD"
     }
   ]
 }
