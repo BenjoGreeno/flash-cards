@@ -1,0 +1,37 @@
+{
+  "subject": "aws-ai-practitioner",
+  "topic": "exam-overview",
+  "source": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is: Select your cookie preferences\n\nWe use essential c...?",
+      "answer": "Select your cookie preferences\n\nWe use essential cookies and similar tools that are necessary to provide our site and services"
+    },
+    {
+      "id": 2,
+      "question": "What is: We use performance cookies to collect anonymous st...?",
+      "answer": "We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements"
+    },
+    {
+      "id": 3,
+      "question": "What is: Essential cookies cannot be deactivated, but you c...?",
+      "answer": "Essential cookies cannot be deactivated, but you can choose “Customize” or “Decline” to decline performance cookies"
+    },
+    {
+      "id": 4,
+      "question": "What is: If you agree, AWS and approved third parties will ...?",
+      "answer": "If you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising"
+    },
+    {
+      "id": 5,
+      "question": "What is: To accept or decline all non-essential cookies, ch...?",
+      "answer": "To accept or decline all non-essential cookies, choose “Accept” or “Decline"
+    },
+    {
+      "id": 6,
+      "question": "What is: ” To make more detailed choices, choose “Customize...?",
+      "answer": "” To make more detailed choices, choose “Customize"
+    }
+  ]
+}

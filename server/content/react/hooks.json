@@ -1,0 +1,16 @@
+{
+  "subject": "react",
+  "topic": "hooks",
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is the useState hook?",
+      "answer": "useState is a React hook that lets you add state to functional components."
+    },
+    {
+      "id": 2,
+      "question": "When does useEffect run?",
+      "answer": "useEffect runs after every render by default, but can be controlled with dependencies."
+    }
+  ]
+}

@@ -1,11 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
+import FlashCard from './FlashCard';
+import SubjectSelector from './SubjectSelector';
 import './App.css';
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [currentSubject, setCurrentSubject] = useState('');
+  const [currentTopic, setCurrentTopic] = useState('');
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/cards')
+  const handleSelectionChange = useCallback((subject, topic) => {
+    setCurrentSubject(subject);
+    setCurrentTopic(topic);
+    
+    fetch(`http://localhost:5000/api/cards/${subject}/${topic}`)
       .then(res => res.json())
       .then(data => setCards(data))
       .catch(err => console.error('Error fetching cards:', err));
@@ -15,12 +22,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Flash Cards</h1>
+        <SubjectSelector onSelectionChange={handleSelectionChange} />
+        {currentSubject && currentTopic && (
+          <p className="current-selection">
+            {currentSubject} → {currentTopic === 'all' ? 'All Topics' : currentTopic}
+          </p>
+        )}
         <div className="cards-container">
           {cards.map(card => (
-            <div key={card.id} className="card">
-              <h3>{card.question}</h3>
-              <p>{card.answer}</p>
-            </div>
+            <FlashCard key={card.id} card={card} />
           ))}
         </div>
       </header>
