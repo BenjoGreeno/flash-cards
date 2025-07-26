@@ -1,0 +1,31 @@
+{
+  "subject": "general",
+  "topic": "support",
+  "cards": [
+    {
+      "id": 1,
+      "question": "Did these flashcards help you pass your exam?",
+      "answer": "Great! Consider buying Ben a coffee ☕ - his PayPal probably needs more love than his code does!"
+    },
+    {
+      "id": 2,
+      "question": "Want to support this free flashcard app?",
+      "answer": "PayPal: your-paypal@email.com - Because servers cost money but dad jokes are free! 💸"
+    },
+    {
+      "id": 3,
+      "question": "How much should I donate?",
+      "answer": "Whatever you think this saved you in exam prep costs! Even $1 helps keep the lights on 💡"
+    },
+    {
+      "id": 4,
+      "question": "What happens if I don't donate?",
+      "answer": "Nothing! The app stays free. But Ben's coffee fund gets sadder ☕😢"
+    },
+    {
+      "id": 5,
+      "question": "Is this donation request annoying?",
+      "answer": "Probably! But less annoying than paying $300 for exam prep courses 🤷‍♂️"
+    }
+  ]
+}

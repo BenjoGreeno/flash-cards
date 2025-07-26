@@ -1,0 +1,31 @@
+{
+  "subject": "general",
+  "topic": "about",
+  "cards": [
+    {
+      "id": 1,
+      "question": "Who built this flashcard app?",
+      "answer": "Ben Green - a developer who believes learning should be free (but coffee shouldn't be) ☕"
+    },
+    {
+      "id": 2,
+      "question": "Why did Ben make this app?",
+      "answer": "Because paying $50+ for flashcard apps is highway robbery! Also, he likes building cool stuff 🚀"
+    },
+    {
+      "id": 3,
+      "question": "How can I support this project?",
+      "answer": "PayPal donations, GitHub stars, or just tell your friends! Word of mouth > paid ads 📢"
+    },
+    {
+      "id": 4,
+      "question": "Will this app always be free?",
+      "answer": "Yes! Open source and free forever. Check it out on GitHub: BenjoGreeno/flash-cards 🆓"
+    },
+    {
+      "id": 5,
+      "question": "Can I contribute flashcards?",
+      "answer": "Absolutely! Fork the repo, add your JSON files, and submit a PR. Community-driven learning! 🤝"
+    }
+  ]
+}
