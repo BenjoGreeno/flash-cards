@@ -4,12 +4,40 @@ A simple Node.js & React flash cards application with AI-powered content generat
 
 ## Quick Start
 
-1. **Install dependencies:**
+### Option 1: Docker (Recommended)
+
+**Prerequisites:** Docker and Docker Compose
+
+1. **Clone and start:**
+```bash
+git clone https://github.com/BenjoGreeno/flash-cards.git
+cd flash-cards
+docker-compose up
+```
+
+2. **Open:** http://localhost:3002
+
+**With MCP server (for AI features):**
+```bash
+docker-compose --profile mcp up
+```
+
+### Option 2: Local Development
+
+**Prerequisites:** Node.js (v16 or higher), npm
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/BenjoGreeno/flash-cards.git
+cd flash-cards
+```
+
+2. **Install dependencies:**
 ```bash
 npm run install-all
 ```
 
-2. **Start the app:**
+3. **Start the app:**
 ```bash
 npm run dev
 ```
@@ -18,6 +46,8 @@ This starts:
 - Backend API: http://localhost:5000
 - React app: http://localhost:3002
 
+**That's it!** Open http://localhost:3002 in your browser to start studying.
+
 ## Usage Options
 
 ### Option 1: Manual Flashcard Creation (No AI Required)
@@ -25,6 +55,13 @@ This starts:
 Create flashcards by adding JSON files to the content structure:
 
 1. **Create subject folder:**
+
+**Docker:**
+```bash
+docker-compose exec api mkdir -p /app/content/your-subject
+```
+
+**Local:**
 ```bash
 mkdir server/content/your-subject
 ```
@@ -54,6 +91,12 @@ Use the MCP server to generate flashcards from PDFs and websites:
 
 #### Setup MCP Server
 
+**With Docker:**
+```bash
+docker-compose --profile mcp up
+```
+
+**Local development:**
 1. **Install MCP dependencies:**
 ```bash
 cd mcp-server
@@ -126,6 +169,37 @@ server/content/
 - **3001**: MCP server (if using AI features)
 - **3002**: React frontend
 
+## Troubleshooting
+
+### Docker Issues
+
+**Port conflicts:**
+- Change ports in `docker-compose.yml` if 3002 or 5000 are in use
+- Stop other services: `docker-compose down`
+
+**Build issues:**
+- Rebuild containers: `docker-compose up --build`
+- Clear Docker cache: `docker system prune`
+
+**Container not starting:**
+- Check logs: `docker-compose logs [service-name]`
+- Verify Docker and Docker Compose are installed
+
+### Local Development Issues
+
+**Port conflicts:**
+- If port 3002 is in use, create `client/.env` with `PORT=3003`
+- If port 5000 is in use, update `server/server.js` port setting
+
+**Dependencies issues:**
+- Delete `node_modules` folders and run `npm run install-all` again
+- Ensure Node.js version is 16 or higher: `node --version`
+
+**App not loading:**
+- Check both servers are running (you should see output from both)
+- Verify http://localhost:5000/api/subjects returns JSON
+- Check browser console for errors
+
 ## Contributing
 
 Fork this repo and add your own flashcard subjects! Perfect for:
@@ -136,4 +210,4 @@ Fork this repo and add your own flashcard subjects! Perfect for:
 
 ## Examples
 
-See `server/content/` for example flashcard formats covering JavaScript, React, and AWS topics.
+See `server/content/` for example flashcard formats covering JavaScript, React, System Design, and AWS topics.
