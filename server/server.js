@@ -4,10 +4,13 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
+
+// Serve static files (React build)
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Get all subjects
 app.get('/api/subjects', (req, res) => {
@@ -87,6 +90,11 @@ app.get('/api/cards', (req, res) => {
   const filePath = path.join(__dirname, 'content', 'javascript', 'basics.json');
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   res.json(data.cards);
+});
+
+// Serve React app for all non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {

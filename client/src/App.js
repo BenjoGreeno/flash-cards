@@ -14,7 +14,7 @@ function App() {
     setCurrentSubject(subject);
     setCurrentTopic(topic);
     
-    fetch(`http://localhost:5000/api/cards/${subject}/${topic}`)
+    fetch(`/api/cards/${subject}/${topic}`)
       .then(res => res.json())
       .then(data => {
         setCards(data.cards || data); // Handle both new and old format

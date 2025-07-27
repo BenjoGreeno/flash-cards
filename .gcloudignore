@@ -1,0 +1,12 @@
+.gcloudignore
+.git
+.gitignore
+node_modules
+npm-debug.log
+.DS_Store
+mcp-server/
+docker-compose.yml
+client/Dockerfile
+server/Dockerfile
+mcp-server/Dockerfile
+client/nginx.conf

@@ -8,7 +8,7 @@ function SubjectSelector({ onSelectionChange }) {
   const [selectedTopic, setSelectedTopic] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/subjects')
+    fetch('/api/subjects')
       .then(res => res.json())
       .then(data => setSubjects(data))
       .catch(err => console.error('Error fetching subjects:', err));
@@ -16,7 +16,7 @@ function SubjectSelector({ onSelectionChange }) {
 
   useEffect(() => {
     if (selectedSubject) {
-      fetch(`http://localhost:5000/api/subjects/${selectedSubject}`)
+      fetch(`/api/subjects/${selectedSubject}`)
         .then(res => res.json())
         .then(data => setTopics(data))
         .catch(err => console.error('Error fetching topics:', err));
