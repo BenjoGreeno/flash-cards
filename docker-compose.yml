@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Main Flash Cards API
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server/content:/app/content
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # React Frontend
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3002:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # MCP Server (optional)
+  mcp-server:
+    build:
+      context: ./mcp-server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    profiles:
+      - mcp

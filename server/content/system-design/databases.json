@@ -1,0 +1,46 @@
+{
+  "subject": "system-design",
+  "topic": "databases",
+  "cards": [
+    {
+      "id": 1,
+      "question": "When should you choose SQL vs NoSQL databases?",
+      "answer": "SQL for complex queries, ACID compliance, structured data. NoSQL for scalability, flexibility, unstructured data"
+    },
+    {
+      "id": 2,
+      "question": "What is ACID in database systems?",
+      "answer": "Atomicity, Consistency, Isolation, Durability - properties that guarantee reliable database transactions"
+    },
+    {
+      "id": 3,
+      "question": "What is eventual consistency?",
+      "answer": "A consistency model where the system will become consistent over time, but may be temporarily inconsistent"
+    },
+    {
+      "id": 4,
+      "question": "What is database partitioning?",
+      "answer": "Dividing a database into smaller, more manageable pieces while maintaining logical relationships"
+    },
+    {
+      "id": 5,
+      "question": "What is a database index and why is it important?",
+      "answer": "A data structure that improves query performance by creating shortcuts to find data without scanning entire tables"
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between master-slave and master-master replication?",
+      "answer": "Master-slave: one write node, multiple read replicas. Master-master: multiple nodes can accept writes"
+    },
+    {
+      "id": 7,
+      "question": "What is a database connection pool?",
+      "answer": "A cache of database connections that can be reused across requests to avoid the overhead of creating new connections"
+    },
+    {
+      "id": 8,
+      "question": "What is denormalization and when is it used?",
+      "answer": "Adding redundant data to improve read performance, typically used in high-traffic systems where reads outweigh writes"
+    }
+  ]
+}

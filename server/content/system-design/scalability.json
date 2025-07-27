@@ -1,0 +1,66 @@
+{
+  "subject": "system-design",
+  "topic": "scalability",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "High Scalability - http://highscalability.com",
+      "System Design Primer - GitHub",
+      "AWS Well-Architected Framework"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is horizontal scaling?",
+      "answer": "Adding more servers/instances to handle increased load, also known as 'scaling out'"
+    },
+    {
+      "id": 2,
+      "question": "What is vertical scaling?",
+      "answer": "Adding more power (CPU, RAM) to existing servers to handle increased load, also known as 'scaling up'"
+    },
+    {
+      "id": 3,
+      "question": "What is a Load Balancer?",
+      "answer": "A system that distributes incoming requests across multiple servers to prevent any single server from being overwhelmed"
+    },
+    {
+      "id": 4,
+      "question": "What is database sharding?",
+      "answer": "Partitioning a database horizontally across multiple servers, where each shard contains a subset of the data"
+    },
+    {
+      "id": 5,
+      "question": "What is caching and why is it important for scalability?",
+      "answer": "Storing frequently accessed data in fast storage (memory) to reduce database load and improve response times"
+    },
+    {
+      "id": 6,
+      "question": "What is a Content Delivery Network (CDN)?",
+      "answer": "A distributed network of servers that cache and serve static content from locations closest to users"
+    },
+    {
+      "id": 7,
+      "question": "What is database replication?",
+      "answer": "Creating copies of a database across multiple servers to improve read performance and provide redundancy"
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between stateful and stateless applications?",
+      "answer": "Stateless apps don't store user session data on the server (easier to scale), while stateful apps maintain session state"
+    },
+    {
+      "id": 9,
+      "question": "What is auto-scaling?",
+      "answer": "Automatically adjusting the number of running instances based on current demand and predefined metrics"
+    },
+    {
+      "id": 10,
+      "question": "What is the CAP theorem?",
+      "answer": "States that distributed systems can only guarantee 2 of 3: Consistency, Availability, and Partition tolerance"
+    }
+  ]
+}

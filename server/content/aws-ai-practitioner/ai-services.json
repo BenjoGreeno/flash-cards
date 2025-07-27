@@ -1,0 +1,41 @@
+{
+  "subject": "aws-ai-practitioner",
+  "topic": "ai-services",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "AWS AI Services Documentation",
+      "AWS Rekognition, Comprehend, Polly Documentation",
+      "AWS AI Practitioner Exam Guide"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is Amazon Rekognition used for?",
+      "answer": "Image and video analysis - object detection, facial recognition, text extraction"
+    },
+    {
+      "id": 2,
+      "question": "What does Amazon Comprehend do?",
+      "answer": "Natural language processing - sentiment analysis, entity extraction, language detection"
+    },
+    {
+      "id": 3,
+      "question": "What is Amazon Polly?",
+      "answer": "Text-to-speech service that converts text into lifelike speech"
+    },
+    {
+      "id": 4,
+      "question": "What is Amazon Transcribe?",
+      "answer": "Speech-to-text service that converts audio to text with timestamps"
+    },
+    {
+      "id": 5,
+      "question": "What is Amazon Translate used for?",
+      "answer": "Real-time language translation service supporting 75+ languages"
+    }
+  ]
+}

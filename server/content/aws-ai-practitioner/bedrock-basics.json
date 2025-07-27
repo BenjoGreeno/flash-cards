@@ -1,0 +1,41 @@
+{
+  "subject": "aws-ai-practitioner",
+  "topic": "bedrock-basics",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "AWS Bedrock Documentation",
+      "AWS AI Practitioner Exam Guide",
+      "AWS Bedrock User Guide"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is Amazon Bedrock?",
+      "answer": "A fully managed service that offers foundation models from leading AI companies through a single API"
+    },
+    {
+      "id": 2,
+      "question": "Which foundation model providers are available in Bedrock?",
+      "answer": "Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon's own Titan models"
+    },
+    {
+      "id": 3,
+      "question": "What is the main benefit of using Bedrock for AI applications?",
+      "answer": "No infrastructure management required - serverless access to multiple foundation models"
+    },
+    {
+      "id": 4,
+      "question": "Can you fine-tune models in Amazon Bedrock?",
+      "answer": "Yes, Bedrock supports fine-tuning with your own data while keeping data private"
+    },
+    {
+      "id": 5,
+      "question": "What security features does Bedrock provide?",
+      "answer": "Data encryption, VPC support, IAM integration, and data never leaves your AWS account"
+    }
+  ]
+}

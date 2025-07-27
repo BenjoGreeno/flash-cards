@@ -1,0 +1,56 @@
+{
+  "subject": "system-design",
+  "topic": "architecture-patterns",
+  "metadata": {
+    "lastUpdated": "2024-12-19",
+    "sources": [
+      "Martin Fowler - Patterns of Enterprise Application Architecture",
+      "Microsoft Architecture Patterns",
+      "Clean Architecture by Robert Martin"
+    ],
+    "author": "Ben Green",
+    "version": "1.0"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is the Microservices architecture pattern?",
+      "answer": "An approach where applications are built as a collection of small, independent services that communicate over well-defined APIs"
+    },
+    {
+      "id": 2,
+      "question": "What is the main benefit of the Monolithic architecture?",
+      "answer": "Simplicity in development, testing, and deployment - everything is in one codebase and deployable unit"
+    },
+    {
+      "id": 3,
+      "question": "What is the Event-Driven architecture pattern?",
+      "answer": "A pattern where components communicate through events, promoting loose coupling and asynchronous processing"
+    },
+    {
+      "id": 4,
+      "question": "What is the Layered (N-tier) architecture?",
+      "answer": "Organizes code into horizontal layers (presentation, business, data) where each layer only communicates with adjacent layers"
+    },
+    {
+      "id": 5,
+      "question": "What is the CQRS pattern?",
+      "answer": "Command Query Responsibility Segregation - separates read and write operations using different models for updating and displaying data"
+    },
+    {
+      "id": 6,
+      "question": "What is the Hexagonal (Ports and Adapters) architecture?",
+      "answer": "Isolates core business logic from external concerns by defining ports (interfaces) and adapters (implementations)"
+    },
+    {
+      "id": 7,
+      "question": "What is the Serverless architecture pattern?",
+      "answer": "Applications built using cloud functions that automatically scale and are billed only when executed"
+    },
+    {
+      "id": 8,
+      "question": "What is the Service-Oriented Architecture (SOA)?",
+      "answer": "Architecture where functionality is grouped into services that communicate through well-defined interfaces and protocols"
+    }
+  ]
+}

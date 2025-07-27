@@ -1,0 +1,46 @@
+{
+  "subject": "system-design",
+  "topic": "design-principles",
+  "cards": [
+    {
+      "id": 1,
+      "question": "What is the Single Responsibility Principle?",
+      "answer": "A class or module should have only one reason to change - it should have only one job or responsibility"
+    },
+    {
+      "id": 2,
+      "question": "What does 'loose coupling' mean in system design?",
+      "answer": "Components have minimal dependencies on each other, making the system more flexible and maintainable"
+    },
+    {
+      "id": 3,
+      "question": "What is high cohesion in system design?",
+      "answer": "Elements within a module work together toward a single, well-defined task or purpose"
+    },
+    {
+      "id": 4,
+      "question": "What is the principle of separation of concerns?",
+      "answer": "Dividing a system into distinct sections where each section addresses a separate concern or functionality"
+    },
+    {
+      "id": 5,
+      "question": "What is idempotency in system design?",
+      "answer": "An operation that produces the same result whether executed once or multiple times"
+    },
+    {
+      "id": 6,
+      "question": "What is the fail-fast principle?",
+      "answer": "Systems should detect and report failures as early as possible rather than continuing with invalid state"
+    },
+    {
+      "id": 7,
+      "question": "What is graceful degradation?",
+      "answer": "System continues to operate with reduced functionality when some components fail, rather than complete failure"
+    },
+    {
+      "id": 8,
+      "question": "What is the principle of least privilege?",
+      "answer": "Give users, processes, and systems only the minimum access rights needed to perform their function"
+    }
+  ]
+}
