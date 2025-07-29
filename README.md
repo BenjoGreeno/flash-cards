@@ -19,8 +19,9 @@ docker-compose up
 
 **With MCP server (for AI features):**
 ```bash
-docker-compose --profile mcp up
+./mcp-setup.sh
 ```
+Then restart VS Code. See [MCP-SETUP.md](MCP-SETUP.md) for other AI tools.
 
 ### Option 2: Local Development
 

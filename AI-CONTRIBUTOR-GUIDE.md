@@ -101,9 +101,7 @@ mkdir -p server/content/{subject-name}
 ### Existing Subjects:
 - `aws-ai-practitioner` - AWS AI certification content
 - `javascript` - JavaScript programming
-- `react` - React framework
 - `system-design` - Architecture and scalability
-- `nodejs` - Node.js backend development
 
 ### Suggested New Subjects:
 - `python-basics`, `python-advanced`
@@ -124,14 +122,25 @@ Before creating flashcards, ensure:
 - [ ] Sources are credible and relevant
 - [ ] Card IDs start from 1 and are sequential
 
+## MCP Server Integration
+
+For AI-powered flashcard generation, see [MCP-SETUP.md](MCP-SETUP.md) for setup instructions.
+
+**Available MCP tools:**
+- `ingest_pdf` - Extract content from PDF files  
+- `ingest_website` - Extract content from websites
+
+**Usage:** Ask your AI assistant to analyze content and generate flashcards following the JSON structure above.
+
 ## Testing Your Addition
 
 After creating the JSON file:
-1. Restart the application (`npm run dev`)
-2. Navigate to the subject in the UI
-3. Select your new topic
-4. Verify cards display correctly
-5. Check metadata shows in Topic Info
+1. **Docker**: Restart with `docker-compose up` or `docker-compose restart api`
+2. **Local**: Restart with `npm run dev`
+3. Navigate to the subject in the UI
+4. Select your new topic
+5. Verify cards display correctly
+6. Check metadata shows in Topic Info (ℹ️ button)
 
 ## Common Mistakes to Avoid
 
