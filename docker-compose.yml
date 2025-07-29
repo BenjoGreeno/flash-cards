@@ -25,13 +25,3 @@ services:
       - api
     restart: unless-stopped
 
-  # MCP Server (optional)
-  mcp-server:
-    build:
-      context: ./mcp-server
-      dockerfile: Dockerfile
-    ports:
-      - "3001:3001"
-    restart: unless-stopped
-    profiles:
-      - mcp
